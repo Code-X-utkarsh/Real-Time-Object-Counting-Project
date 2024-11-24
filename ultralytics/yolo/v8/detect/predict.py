@@ -51,7 +51,7 @@ def count(founded_classes, im0):
 def init_tracker():
     global deepsort
     cfg_deep = get_config()
-    cfg_deep.merge_from_file("deep_sort_pytorch/configs/deep_sort.yaml")
+    cfg_deep.merge_from_file("ultralytics/yolo/v8/detect/deep_sort_pytorch/configs/deep_sort.yaml")
 
     deepsort= DeepSort(cfg_deep.DEEPSORT.REID_CKPT,
                             max_dist=cfg_deep.DEEPSORT.MAX_DIST, min_confidence=cfg_deep.DEEPSORT.MIN_CONFIDENCE,
